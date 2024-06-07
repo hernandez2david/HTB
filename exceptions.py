@@ -1,12 +1,25 @@
-#zero division
+https://www.hackerrank.com/challenges/exceptions/problem?isFullScreen=true
 
-#value error
+#counts the number of values are received
+contador  = int(input())
+lista = []
 
-input
+#prints the divisions and handles exceptions
+def evaluator(lista):
+    try:
+        division = int(lista[0])//int(lista[1])
+        print(division)
+    except ZeroDivisionError as e:
+        print("Error Code:",e)
+    except TypeError as n:
+        print(f"Error Code:",n)
+    except ValueError as r:
+        print(f"Error Code:",r)
 
-try:
-    print(1/"S")
-except ZeroDivisionError as e:
-    print("Error Code: integer division or modulo by zero")
-except TypeError as n:
-    print(f"Error Code: invalid literal for int() with base 10: {divis}")
+#saves the values received into a list that can be indexed
+for i in range(contador):
+    value = input()
+    lista.append(value.split())
+#Calls the function evaluator
+for e in lista:
+    evaluator(e)
