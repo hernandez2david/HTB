@@ -1,4 +1,5 @@
 #Code generated with assistance of ChatGPT
+#https://www.hackerrank.com/challenges/py-collections-ordereddict/problem?isFullScreen=true
 
 n = int(input())
 
